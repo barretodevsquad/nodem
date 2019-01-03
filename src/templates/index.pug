@@ -1,0 +1,47 @@
+html(lang="en")
+head
+    meta(content='text/html',  charset='utf-8')
+    meta(name="viewport",      content="width=device-width, initial-scale=1")
+    meta(name='description',   content='A nodejs version management')
+    meta(name='keywords',      content='node, nodejs, verion manager, version management')
+    meta(name='author',        content='Victor Eduardo Barreto')
+    link(rel ='shortcut icon', href   ='img/favicon.ico', type='image/x-icon')
+    link(href='css/style.css', rel    ='stylesheet')
+    title Nodem - Node version manager
+
+    block scripts
+        script(src='js/script.js')
+
+body
+    div.container-fluid
+        div.row
+            div.col.float-panel
+                div.row.text-center
+                    div#brand-title.col-sm-12.col-md-12.col-lg-4.offset-lg-4 NODEM
+                    div.col-sm-12.col-md-12.col-lg-4.align-bottom
+                        span#brand-version.text-green-shadow.pt-5 loading version...
+                            //- div.row.line
+
+                div.row
+                    div.col-sm-12.col-md-3
+                        div.col-sm-12
+                            a(onClick="terminal('use')")
+                                h4.pt-2.mt-1.text-green-shadow.efeitoMaquina(data="how to use")
+
+                        div.col-sm-12
+                            a(onClick="terminal('install')")
+                                h4.pt-2.mt-1.text-green-shadow.efeitoMaquina(data="install")
+
+                        div.col-sm-12
+                            a(onClick="terminal('about')")
+                                h4.pt-2.mt-1.text-green-shadow.efeitoMaquina(data="about")
+
+                        div.col-sm-12
+                            a(href="https://github.com/marcoT89/nodem")
+                                h4.pt-2.mt-1.text-green-shadow.efeitoMaquina(data="git")
+
+                    div.col-sm-12.col-md-9
+                        div#terminal.col-sm-12.text-green-shadow
+
+                    div.col-sm-12.fixed-bottom
+                        h4.float-right.text-green-shadow NodeJS Version Manager
